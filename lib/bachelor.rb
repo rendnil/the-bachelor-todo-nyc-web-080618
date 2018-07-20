@@ -17,11 +17,10 @@ end
 def get_contestant_name(data, occupation)
   occupation_name = nil
   data.each do |series, dataset|
-    if series.to_s == season
       dataset.each do |contestant, traits|
         if contestant.values.include?(occupation) == true
           occupation_name = contestant["name"].split(" ")[0]
-        end  
+          
       end 
     end
   end
