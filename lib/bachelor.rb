@@ -49,7 +49,7 @@ def get_occupation(data, hometown)
       end 
     end
   end
- peson_occupation
+ person_occupation
   
   
   
