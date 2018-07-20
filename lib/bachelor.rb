@@ -20,7 +20,6 @@ def get_contestant_name(data, occupation)
       dataset.each do |contestant, traits|
         if contestant.values.include?(occupation) == true
           occupation_name = contestant["name"]
-          
       end 
     end
   end
@@ -28,8 +27,14 @@ def get_contestant_name(data, occupation)
   
 end
 
+
 def count_contestants_by_hometown(data, hometown)
-  # code here
+  hometown_count = 0
+  
+  
+  
+  
+  
 end
 
 def get_occupation(data, hometown)
