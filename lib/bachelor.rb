@@ -57,7 +57,7 @@ def get_average_age_for_season(data, season)
   data.each do |series, dataset|
     if series.to_s == season
       dataset.each do |contestant, traits|
-        age_season_array.push(contestant["age"].to_i)
+        age_season_array.push(contestant["age"].to_f)
       end 
     end
   end
@@ -65,7 +65,7 @@ def get_average_age_for_season(data, season)
    age_season_array.each do |age|
     age_sum = age_sum + age
    end
-average_age = age_sum / age_season_array.length.to_i   
+average_age = age_sum / age_season_array.length.to_f   
  
 end
 
