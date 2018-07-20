@@ -58,7 +58,6 @@ def get_average_age_for_season(data, season)
     if series.to_s == season
       dataset.each do |contestant, traits|
         age_season_array.push(contestant["age"].to_f)
-         
       end 
     end
   end
