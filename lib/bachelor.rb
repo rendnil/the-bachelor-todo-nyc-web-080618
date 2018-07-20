@@ -15,8 +15,17 @@ def get_first_name_of_season_winner(data, season)
 end
 
 def get_contestant_name(data, occupation)
-  
-  
+  occupation_name = nil
+  data.each do |series, dataset|
+    if series.to_s == season
+      dataset.each do |contestant, traits|
+        if contestant.values.include?(occupation) == true
+          winner_name = contestant["name"].split(" ")[0]
+        end  
+      end 
+    end
+  end
+ occupation_name 
   
 end
 
