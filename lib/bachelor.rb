@@ -30,6 +30,14 @@ end
 
 def count_contestants_by_hometown(data, hometown)
   hometown_count = 0
+    data.each do |series, dataset|
+      dataset.each do |contestant, traits|
+        if contestant.values.include?(hometown) == true
+          hometown_count +=1
+      end 
+    end
+  end
+ hometown_count 
   
   
   
