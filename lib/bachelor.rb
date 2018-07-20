@@ -41,15 +41,15 @@ def count_contestants_by_hometown(data, hometown)
 end
 
 def get_occupation(data, hometown)
-  person_occupation = nil
+  person_occupation = [ ]
   data.each do |series, dataset|
       dataset.each do |contestant, traits|
         if contestant.values.include?(hometown) == true
-          person_occupation = contestant["occupation"]
+          person_occupation.push(contestant["occupation"])
       end 
     end
   end
- person_occupation
+ person_occupation[0]
   
   
   
