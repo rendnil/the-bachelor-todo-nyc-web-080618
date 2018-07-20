@@ -38,15 +38,21 @@ def count_contestants_by_hometown(data, hometown)
     end
   end
  hometown_count 
-  
-  
-  
-  
-  
 end
 
 def get_occupation(data, hometown)
-  # code here
+  person_occupation = nil
+  data.each do |series, dataset|
+      dataset.each do |contestant, traits|
+        if contestant.values.include?(hometown) == true
+          person_occupation = contestant["occupation"]
+      end 
+    end
+  end
+ peson_occupation
+  
+  
+  
 end
 
 def get_average_age_for_season(data, season)
