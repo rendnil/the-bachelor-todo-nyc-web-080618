@@ -50,13 +50,11 @@ def get_occupation(data, hometown)
     end
   end
  person_occupation[0]
-  
-  
-  
 end
 
 def get_average_age_for_season(data, season)
-  # code here
+  age_season_array =  [ ]
+  
 end
 
 =begin
