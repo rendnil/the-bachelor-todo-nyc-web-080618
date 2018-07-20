@@ -19,7 +19,7 @@ def get_contestant_name(data, occupation)
   data.each do |series, dataset|
       dataset.each do |contestant, traits|
         if contestant.values.include?(occupation) == true
-          occupation_name = contestant["name"].split(" ")
+          occupation_name = contestant["name"].split(" ")[0]
           
       end 
     end
