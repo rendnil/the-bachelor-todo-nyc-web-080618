@@ -20,7 +20,7 @@ def get_contestant_name(data, occupation)
     if series.to_s == season
       dataset.each do |contestant, traits|
         if contestant.values.include?(occupation) == true
-          winner_name = contestant["name"].split(" ")[0]
+          occupation_name = contestant["name"].split(" ")[0]
         end  
       end 
     end
